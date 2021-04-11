@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="148" height="26" viewBox="0 0 148 26">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 26.902px;
+        text-anchor: middle;
+        fill: #3eb8f4;
+        font-family: Rubik-BoldItalic, Rubik;
+      }
+
+      .cls-2 {
+        fill: #fdad33;
+      }
+    </style>
+  </defs>
+  <text id="JOBEST" class="cls-1" transform="translate(72.854 25.274) scale(1.338)"><tspan x="0">JO<tspan class="cls-2">BEST</tspan></tspan></text>
+</svg>

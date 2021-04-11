@@ -13,12 +13,16 @@
 
 body {
     height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;    
     line-height: 1.6;
 }
 
 a{
     text-decoration: none;
+}
+
+p{
+    font-family: 'Rubik', sans-serif;
 }
 
 .container {
@@ -32,11 +36,12 @@ a{
 #navbar {
     --navbar-height: 64px;
     position: fixed;
+    top: 0;
+    z-index: 100;
     height: var(--navbar-height);
-    background-color: var(--navbar-bg-color);
     left: 0;
     right: 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    max-width: 100%;
 }
 
 .navbar-container {
@@ -44,12 +49,58 @@ a{
     justify-content: space-between;
     height: 100%;
     align-items: center;
+    max-width: 98%;
 }
 
 .navbar-item {
     margin: 0.4em;
     width: 100%;
+    margin: 0.4em;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Nunito Sans', sans-serif;    
+    line-height: 2.782;
+    text-align: center;
+    left: 1563.096px;
+    top: 95.933px;
+    z-index: 154;
 }
+
+
+
+.btn_sign_in {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1920px;
+  height: 7355px;
+  z-index: 155;
+}
+.Sign_In {
+  font-size: 18px;
+  font-family: "NunitoSans";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 2.782;
+  text-align: center;
+  position: absolute;
+  left: 1563.096px;
+  top: 95.933px;
+  z-index: 154;
+}
+
+.navrcorner {
+  background-image: -moz-linear-gradient( 170deg, rgb(24,56,107) 1%, rgb(41,99,187) 100%);
+  background-image: -webkit-linear-gradient( 170deg, rgb(24,56,107) 1%, rgb(41,99,187) 100%);
+  background-image: -ms-linear-gradient( 170deg, rgb(24,56,107) 1%, rgb(41,99,187) 100%);
+  position: absolute;
+  left: 1524px;
+  top: 52px;
+  width: 137px;
+  height: 42px;
+  z-index: 153;
+}
+
 
 .home-link,
 .navbar-link {
@@ -70,10 +121,11 @@ a{
 
 .navbar-link {
     justify-content: center;
-    width: 140%;
+    width: 115px;
     padding: 0.4em 0.8em;
-    border-radius: 5px;
+    border-radius: 25px;
 }
+
 
 .navbar-link:focus,
 .navbar-link:hover {
@@ -82,10 +134,9 @@ a{
 }
 
 .navbar-logo {
-    background-color: var(--navbar-text-color-focus);
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 80px;
+    height: 20px;
     margin-right: 0.5em;
 }
 
@@ -111,6 +162,8 @@ a{
     opacity 0.2s ease-in-out;
     background-color: var(--navbar-text-color);
 }
+
+
 
 .navbar-toggle:focus .icon-bar,
 .navbar-toggle:hover .icon-bar {
@@ -154,13 +207,16 @@ a{
     visibility: visible;
 }
 
+
+
+
 .navbar-links {
     list-style-type: none;
     max-height: 0;
     overflow: hidden;
     position: absolute;
-    background-color: var(--navbar-bg-color);
-    display: flex;
+/*    background-color: var(--navbar-bg-color);
+*/    display: flex;
     flex-direction: column;
     align-items: center;
     left: 0;
@@ -213,27 +269,15 @@ img{
 }
 
 .flex-container {
-    /* We first create a flex layout context */
     display: flex;
-
-    /* Then we define the flow direction
-       and if we allow the items to wrap
-     * Remember this is the same as:
-     * flex-direction: row;
-     * flex-wrap: wrap;
-     */
     flex-flow: row wrap;
-
-    /* Then we define how is distributed the remaining space */
     justify-content: space-around;
-
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
 .flex-item {
-    background: white;
     padding: 5px;
     width: 48%;
     height: 150px;
@@ -245,20 +289,89 @@ img{
     text-align: center;
 }
 
-.flex-item > img{
+/*.flex-item > img{
     width:100%;
     max-width:250px;
+}*/
+
+.logo{
+   width:100%;
+   max-width:250px; 
+}
+
+.sec4-m{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 250px;
+    margin-left: 260px;
+    padding-top: 55px;
+
+}
+
+.findjob{
+    margin-left: 20px;
+    font-size: 2em;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
 }
 
 .findjob2{
-    font-size: 0.3em;
-    margin: -55px;
+    font-size: 0.35em;
+    margin-left: 3px;
+    margin-top: -55px;
+
 }
 
+.findjob3{
+    margin-left: 20px;
+    font-size: 1.2em;
+    text-align: justify;
+    font-family: 'Rubik', sans-serif;
+}
+
+.findjob4{
+    font-size: .85em;
+    margin-left: 20px;
+    margin-top: -38px;
+    text-align: justify;
+}
+
+.img-class1{
+    height: 620px !important;
+    width: 620px !important;
+    margin-right: -55px;
+    margin-top: -115px;
+}
+
+.img-classo2{
+    max-width: 75px;
+    max-height: 580px;
+    margin-left: -185px;
+    margin-top: -57px;
+}
+
+.img-class2 {
+    height: 220px;
+    margin-left: 150px;
+    width: 220px;
+    margin-top: -65px;
+}
+
+.img-class3{
+    height: 240px;
+    width: 275px;
+}
+
+.img-boxes{
+    max-height: 263px;
+    max-width: 200px;
+    float: right;
+}
+    
 
 .searchbar{
     margin-bottom: auto;
-    margin-top: auto;
+    margin-top: -25px;
+    margin-left:18px;
     height: 60px;
     background-color: #f5f5f5;
     border-radius: 30px;
@@ -273,14 +386,18 @@ img{
     background: none;
     width: 0;
     caret-color:transparent;
+
     line-height: 40px;
     transition: width 0.4s linear;
     color: white;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 .searchbar:hover > .search_input{
-    padding: 0 10px;
+    text-align: left;
     width: 300px;
+    margin-left: -160px;
     caret-color:#fc9d03;
     transition: width 0.4s linear;
 
@@ -344,23 +461,67 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-
     height: 5vh;
+}
+
+.companies{
+    text-align: left;
+    margin-left: 20px;
+}
+
+.join-ribbon1{
+    margin-top: -120px;
+    z-index: 1;
+}
+
+.join-ribbon2{
+    float: right;
+    margin-top: -280px;
+    z-index: 1;
+}
+
+.join-us{
+    display: flex;
+    justify-content: center;
+    margin-top: 320px;
+}
+
+.join-text{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap');
 
 .containerPackage {
     position: relative;
+    margin-top: 170px;
+    margin-left: 255px;
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 1200px;
     flex-wrap: wrap;
     z-index: 1;
+    border-radius: 30px;
+}
+
+#containerPackage1 {
+    position: relative;
+    margin-top: 170px;
+    margin-right: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+    border-radius: 30px;
 }
 
 .containerPackage .card {
+    font-family: 'Poppins', sans-serif;
     position: relative;
     width: 210px;
     height: 280px;
@@ -378,6 +539,25 @@ img{
     -webkit-backdrop-filter: blur(5px);
 }
 
+
+.containerPackage1 {
+    position: relative;
+    margin-top: 40px;
+    margin-left: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+    border-radius: 30px;
+}
+
+
+.containerPackage1 .card-rt{
+    background-color: white;
+}
+
 .containerPackage .card .content {
     padding: 20px;
     text-align: center;
@@ -386,9 +566,20 @@ img{
     opacity: 0.5;
 }
 
+
+
 .containerPackage .card:hover .content {
     transform: translateY(0);
     opacity: 1;
+    border-radius: 15px;
+    width: 210px;
+    height: 280px;
+    margin: 0px;
+    background-image: -moz-linear-gradient( -90deg, rgb(78,199,245) 0%, rgb(92,117,254) 100%);
+    background-image: -webkit-linear-gradient( -90deg, rgb(78,199,245) 0%, rgb(92,117,254) 100%);
+    background-image: -ms-linear-gradient( -90deg, rgb(78,199,245) 0%, rgb(92,117,254) 100%);
+    box-shadow: 0px 24px 69.92px 6.08px rgba(90, 129, 253, 0.5);
+
 }
 
 .containerPackage .card .content h2 {
@@ -426,6 +617,11 @@ img{
     box-shadow: 0 5px 15px rgba(0,0,0,0.5);
 }
 
+.containerPackage .card .content img {
+    width: 100%;
+    max-width: 60px;
+}
+
 .icon {
     margin: 0 auto 15px auto;
     padding-top: 12px;
@@ -445,13 +641,22 @@ img{
     padding: 0 0 0 0;
     font-size: 14px;
     background: #fff;
-    background-image: url("https://bestof.nyc3.digitaloceanspaces.com/devsnap.me/sam/css-y-svg-waves-animation.gif");
+    margin-top: 250px;
 }
 
-#footer .footer-top {
-    background: #f5f8fd;
-    background-image: url("https://bestof.nyc3.digitaloceanspaces.com/devsnap.me/sam/css-y-svg-waves-animation.gif");
 
+.footer-bg1{
+    width: 100%;
+    max-width: 2000px;
+    margin-bottom: -555px;
+    height: 580px;
+}
+
+.footer-bg2{
+    width: 100%;
+    max-width: 2000px;
+    margin-bottom: -555px;
+    height: 711px;
 }
 
 #footer .footer-top .footer-info {
@@ -463,8 +668,9 @@ img{
     margin: 0 0 20px 0;
     padding: 2px 0 2px 0;
     line-height: 1;
-    font-family: "Montserrat", sans-serif;
-    color: #413e66;
+    font-family: 'Poppins', sans-serif; 
+
+    color: white;
     font-weight: 400;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -474,8 +680,8 @@ img{
     font-size: 13px;
     line-height: 24px;
     margin-bottom: 0;
-    font-family: "Montserrat", sans-serif;
-    color: #535074;
+    font-family: 'Poppins', sans-serif;    
+    color: white;
 }
 
 #footer .footer-top .social-links a {
@@ -572,23 +778,23 @@ img{
     flex-direction: row;
     font-size: 30px;
     text-align: center;
-    background-image: url("https://bestof.nyc3.digitaloceanspaces.com/devsnap.me/sam/css-y-svg-waves-animation.gif");
 
 }
 
 .flex-item-left {
-    background-color: #f5f8fd;
     padding: 10px;
     flex: 50%;
-    background: #929aca;
+    font-family: 'Rubik', sans-serif;
+    color: white ;
 }
 
+
+
 .flex-item-right {
-    background-color: #f5f8fd;
     padding: 10px;
     flex: 50%;
-    background: #929ACA;
-
+    font-family: 'Rubik', sans-serif;
+    color: white ;
 }
 
 .footer-ul{
@@ -598,27 +804,104 @@ img{
     text-decoration: none;
 }
 
+.footer-ul li, a{
+    font-family: 'Rubik', sans-serif;
+    color: white ;
+}
+
 .social-links-footer{
+    margin-top: 220px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-evenly;
     padding: 10px;
 }
 
+.social-links-footer > li > a{
+    display: inline-block;
+    font-size: 18px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 36px;
+    background-color: #222222;
+    color: #fff;
+    margin: 0 3px 3px 0;
+}
+
 .flex-item1{
     margin-top: 0px !important;
-    background-image: url("https://bestof.nyc3.digitaloceanspaces.com/devsnap.me/sam/css-y-svg-waves-animation.gif");
 }
 
 .mailbar{
     margin-bottom: auto;
     margin-top: auto;
-    height: 30px;
-    width: 120px;
+    height: 35px;
+    width: 138px;
     background-color: #f5f5f5;
-    border-radius: 39px;
+    border-radius: 5px;
     color: white;
+}
+
+/* testimonial */
+
+.testimoni{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+
+
+.checked {
+  color: orange;
+}
+
+.search-button{
+  background-image: -moz-linear-gradient( 170deg, rgb(24,56,107) 1%, rgb(41,99,187) 100%);
+  background-image: -webkit-linear-gradient( 170deg, rgb(24,56,107) 1%, rgb(41,99,187) 100%);
+  background-image: -ms-linear-gradient( 170deg, rgb(24,56,107) 1%, rgb(41,99,187) 100%);
+  width: 60px;
+  height: 35px;
+  margin-left: -15px;
+  border-radius: 5px;
+}
+
+.social-linkss a{
+    padding: 10px;
 }
 
 
 
+ul.social {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+ul.social > li {
+  display: inline-block;
+}
+
+ul.social > li > a {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 36px;
+  background-color: #3621a5;
+  color: #fff;
+  margin: 0 3px 3px 0;
+}
+
+ul.social > li > a:hover {
+  text-decoration: none;
+  background-color: #ee7c22;
+}
+
+.social .icon{
+margin-top: -5px !important;
+margin-left: -14px !important;
+}
 
