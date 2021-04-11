@@ -40,7 +40,7 @@
 <!-- ======= Header ======= -->
 <header id="navbar">
   <nav class="navbar-container container">
-    <a href="/" class="home-link"><div class="navbar-logo"><img src="assets/img/jobest.svg" class="logo"></div></a>
+    <a href="/" class="home-link"><div class="navbar-logo"><img src="assets/img/jobest.png" class="logo"></div></a>
     
     <div class="navbar-menu">
       <ul class="navbar-links">
