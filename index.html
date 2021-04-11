@@ -326,6 +326,11 @@
   <div id="social-linkss" class="social-links social-links-footer">
     <ul class="social">
   <li>
+    <a href="https://instagram.com/" title="">
+      <span class="icon fa fa-instagram"></span>
+    </a>
+  </li>
+  <li>
     <a href="https://twitter.com/" title="">
       <span class="icon fa fa-twitter"></span>
     </a>
@@ -333,11 +338,6 @@
   <li>
     <a href="https://www.facebook.com/" title="">
       <span class="icon fa fa-facebook"></span>
-    </a>
-  </li>
-  <li>
-    <a href="https://plus.google.com/" title="">
-      <span class="icon fa fa-google-plus"></span>
     </a>
   </li>
 </ul>
